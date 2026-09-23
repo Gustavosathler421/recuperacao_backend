@@ -7,12 +7,8 @@ const {
 } = require('./funcoesOrcamento');
 
 const cliente = entrada.question("Digite o nome do cliente: ");
-const valorMateriais = entrada.questionFloat(
-    "Digite o valor dos materiais: R$ "
-);
-const horas = entrada.questionFloat(
-    "Digite a quantidade de horas de servico: "
-);
+const valorMateriais = entrada.questionFloat("Digite o valor dos materiais: R$ ");
+const horas = entrada.questionFloat("Digite a quantidade de horas de servico: ");
 
 const maoDeObra = calcularMaoDeObra(horas);
 const total = calcularTotal(valorMateriais, horas);
